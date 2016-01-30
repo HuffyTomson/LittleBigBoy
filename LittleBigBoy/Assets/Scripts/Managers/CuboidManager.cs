@@ -24,8 +24,11 @@ public class Bounds
 public class CuboidManager : SingletonBehaviour<CuboidManager>
 {
     public Cuboid fishPrefab;
+    public GameObject foodPrefab;
     public Bounds startBounds = new Bounds();
-    
+
+    List<GameObject> foodList = new List<GameObject>();
+
     public List<Cuboid> cubeoidList = new List<Cuboid>();
 
     void Awake()
@@ -38,7 +41,23 @@ public class CuboidManager : SingletonBehaviour<CuboidManager>
             fish.data = f;
             AddToList(fish);
         }
-        
+    }
+
+    public void KickFish(Vector3 _from, float _force)
+    {
+        foreach(Cuboid c in cubeoidList)
+        {
+            c.vehicle.Kick(_from, _force);
+        }
+    }
+
+    public void FeedFish(Vector3 _position)
+    {
+        GameObject obj = GameObject.Instantiate(foodPrefab);
+        obj.transform.position = _position + new Vector3(0, 2, 0);
+        foodList.Add(obj);
+        SetCurrentFood();
+        StartCoroutine(FoodLifeTime(obj));
     }
 
     public static void AddToList(Cuboid _cuboid)
@@ -49,5 +68,22 @@ public class CuboidManager : SingletonBehaviour<CuboidManager>
     public static void RemoveFromList(Cuboid _cuboid)
     {
         Instance.cubeoidList.Remove(_cuboid);
+    }
+
+    IEnumerator FoodLifeTime(GameObject _food)
+    {
+        yield return new WaitForSeconds(4.0f);
+
+        foodList.Remove(_food);
+        Destroy(_food);
+        SetCurrentFood();
+    }
+
+    void SetCurrentFood()
+    {
+        foreach(Cuboid c in cubeoidList)
+        {
+            c.vehicle.target = foodList[0].transform;
+        }
     }
 }

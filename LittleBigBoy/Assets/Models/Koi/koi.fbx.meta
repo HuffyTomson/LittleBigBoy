@@ -122,7 +122,121 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/body
+        weight: 1
+      - path: group2/l_eye
+        weight: 1
+      - path: group2/r_eye
+        weight: 1
+      - path: head
+        weight: 1
+      - path: head/lower_lip
+        weight: 1
+      - path: head/root
+        weight: 1
+      - path: head/root/l_fin1
+        weight: 1
+      - path: head/root/l_fin1/l_fin2
+        weight: 1
+      - path: head/root/l_fin1/l_fin2/l_fin3
+        weight: 1
+      - path: head/root/l_fin1/l_fin2/l_fin3/l_fin4
+        weight: 1
+      - path: head/root/l_fin1/l_fin2/l_fin3/l_fin4/l_fin5
+        weight: 1
+      - path: head/root/r_fin1
+        weight: 1
+      - path: head/root/r_fin1/r_fin2
+        weight: 1
+      - path: head/root/r_fin1/r_fin2/r_fin3
+        weight: 1
+      - path: head/root/r_fin1/r_fin2/r_fin3/r_fin4
+        weight: 1
+      - path: head/root/r_fin1/r_fin2/r_fin3/r_fin4/r_fin5
+        weight: 1
+      - path: head/root/spine1
+        weight: 1
+      - path: head/root/spine1/spine2
+        weight: 1
+      - path: head/root/spine1/spine2/l_back_fin1
+        weight: 1
+      - path: head/root/spine1/spine2/l_back_fin1/l_back_fin2
+        weight: 1
+      - path: head/root/spine1/spine2/l_back_fin1/l_back_fin2/l_back_fin3
+        weight: 1
+      - path: head/root/spine1/spine2/l_back_fin1/l_back_fin2/l_back_fin3/l_back_fin4
+        weight: 1
+      - path: head/root/spine1/spine2/l_back_fin1/l_back_fin2/l_back_fin3/l_back_fin4/l_back_fin5q
+        weight: 1
+      - path: head/root/spine1/spine2/r_back_fin1
+        weight: 1
+      - path: head/root/spine1/spine2/r_back_fin1/r_back_fin2
+        weight: 1
+      - path: head/root/spine1/spine2/r_back_fin1/r_back_fin2/r_back_fin3
+        weight: 1
+      - path: head/root/spine1/spine2/r_back_fin1/r_back_fin2/r_back_fin3/r_back_fin4
+        weight: 1
+      - path: head/root/spine1/spine2/r_back_fin1/r_back_fin2/r_back_fin3/r_back_fin4/r_back_fin5q
+        weight: 1
+      - path: head/root/spine1/spine2/spine3
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/lower_tail1
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/lower_tail1/lower_tail2
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/lower_tail1/lower_tail2/lower_tail3
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/lower_tail1/lower_tail2/lower_tail3/lower_tail4
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1/upper_tail2
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1/upper_tail2/upper_tail3
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1/upper_tail2/upper_tail3/upper_tail4
+        weight: 1
+      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1/upper_tail2/upper_tail3/upper_tail4/upper_tail5
+        weight: 1
+      - path: head/upper_lip
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

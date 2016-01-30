@@ -276,9 +276,10 @@ public class SteeringBehavior
         
         if (flee)
             steeringTarget += Flee(vehicle.target.position) * vehicle.fleeWeight;
-        
+
         if (arrive)
-            steeringTarget += Arrive(vehicle.target.position) * vehicle.arriveWeight;
+            if (vehicle.target != null)
+                steeringTarget += Arrive(vehicle.target.position) * vehicle.arriveWeight;
         
         if (follow)
             steeringTarget += Follow(vehicle.leader.transform, vehicle.followOffset);

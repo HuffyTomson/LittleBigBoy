@@ -36,10 +36,10 @@ public class XMLManager : SingletonBehaviour<XMLManager>
         if (File.Exists(Application.persistentDataPath + "Save.txt"))
         {
             string[] lines = File.ReadAllLines(Application.persistentDataPath + "Save.txt");
-            foreach (string s in lines)
-            {
-                Debug.Log(s);
-            }
+            //foreach (string s in lines)
+            //{
+            //    Debug.Log(s);
+            //}
 
             if(lines.Length > 0)
             {

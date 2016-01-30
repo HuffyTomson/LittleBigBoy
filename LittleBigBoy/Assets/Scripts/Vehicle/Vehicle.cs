@@ -107,15 +107,16 @@ public class Vehicle
         //float angle = Mathf.Atan2(lookPos.y, lookPos.x) * Mathf.Rad2Deg;
         //Obj.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         
-        Obj.transform.rotation = Quaternion.Lerp(Obj.transform.rotation, Quaternion.LookRotation(rig.velocity), Time.deltaTime * turnRate);
+        if(rig.velocity.magnitude > 0.01)
+            Obj.transform.rotation = Quaternion.Lerp(Obj.transform.rotation, Quaternion.LookRotation(rig.velocity), Time.deltaTime * turnRate);
      }
 
-    void Kick(Vector3 _from, float _force)
+    public void Kick(Vector3 _from, float _force)
     {
-        Vector3 dir = _from - position;
-        float force = Vector3.Distance(_from, position) + _force;
+        Vector3 dir = position - _from;
+        float dis = Mathf.Clamp(10 - Vector3.Distance(_from, position), 0, 10);
 
-        rig.AddForce(dir * force); 
+        rig.AddForce(dir * dis * _force); 
     }
       
 }

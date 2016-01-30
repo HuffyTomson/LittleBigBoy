@@ -23,9 +23,9 @@ public class CuboidWander : State<Cuboid>
         owner.vehicle.steeringBehavior.wander = true;
         owner.vehicle.wanderWeight = 1f;
 
-        owner.vehicle.evadeTransform = GameManager.Instance.hand;
-        owner.vehicle.steeringBehavior.evade = true;
-        owner.vehicle.evadeWeight = 1;
+        //owner.vehicle.evadeTransform = GameManager.Instance.hand;
+        //owner.vehicle.steeringBehavior.evade = true;
+        //owner.vehicle.evadeWeight = 1;
     }
 
     public override void Exit()
