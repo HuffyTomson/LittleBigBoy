@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 0ae1cddbfb10f8142934be09c6390bdd
+timeCreated: 1454182302
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: body
+    100002: group2
+    100004: head
+    100006: //RootNode
+    100008: l_back_fin1
+    100010: l_back_fin2
+    100012: l_back_fin3
+    100014: l_back_fin4
+    100016: l_back_fin5q
+    100018: l_eye
+    100020: l_fin1
+    100022: l_fin2
+    100024: l_fin3
+    100026: l_fin4
+    100028: l_fin5
+    100030: lower_lip
+    100032: lower_tail1
+    100034: lower_tail2
+    100036: lower_tail3
+    100038: lower_tail4
+    100040: r_back_fin1
+    100042: r_back_fin2
+    100044: r_back_fin3
+    100046: r_back_fin4
+    100048: r_back_fin5q
+    100050: r_eye
+    100052: r_fin1
+    100054: r_fin2
+    100056: r_fin3
+    100058: r_fin4
+    100060: r_fin5
+    100062: root
+    100064: spine1
+    100066: spine2
+    100068: spine3
+    100070: spine4
+    100072: spine5
+    100074: tail1
+    100076: upper_lip
+    100078: upper_tail1
+    100080: upper_tail2
+    100082: upper_tail3
+    100084: upper_tail4
+    100086: upper_tail5
+    400000: body
+    400002: group2
+    400004: head
+    400006: //RootNode
+    400008: l_back_fin1
+    400010: l_back_fin2
+    400012: l_back_fin3
+    400014: l_back_fin4
+    400016: l_back_fin5q
+    400018: l_eye
+    400020: l_fin1
+    400022: l_fin2
+    400024: l_fin3
+    400026: l_fin4
+    400028: l_fin5
+    400030: lower_lip
+    400032: lower_tail1
+    400034: lower_tail2
+    400036: lower_tail3
+    400038: lower_tail4
+    400040: r_back_fin1
+    400042: r_back_fin2
+    400044: r_back_fin3
+    400046: r_back_fin4
+    400048: r_back_fin5q
+    400050: r_eye
+    400052: r_fin1
+    400054: r_fin2
+    400056: r_fin3
+    400058: r_fin4
+    400060: r_fin5
+    400062: root
+    400064: spine1
+    400066: spine2
+    400068: spine3
+    400070: spine4
+    400072: spine5
+    400074: tail1
+    400076: upper_lip
+    400078: upper_tail1
+    400080: upper_tail2
+    400082: upper_tail3
+    400084: upper_tail4
+    400086: upper_tail5
+    2300000: l_eye
+    2300002: r_eye
+    3300000: l_eye
+    3300002: r_eye
+    4300000: r_eye
+    4300002: body
+    4300004: l_eye
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
