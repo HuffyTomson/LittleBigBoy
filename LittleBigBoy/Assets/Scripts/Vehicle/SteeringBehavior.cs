@@ -70,6 +70,8 @@ public class SteeringBehavior
     public Vector3 Arrive(Vector3 target)
     {
         Vector3 toTarget = target - vehicle.position;
+        Debug.DrawRay(vehicle.position, toTarget, Color.red);
+
         float dist = Vector3.Distance(target, vehicle.position);
         
         if (dist > 0.5f)
@@ -272,7 +274,8 @@ public class SteeringBehavior
         Vector3 steeringTarget = Vector3.zero;
         
         if (seek)
-            steeringTarget += Seek(vehicle.target.position) * vehicle.seekWeight;
+            if (vehicle.target != null)
+                steeringTarget += Seek(vehicle.target.position) * vehicle.seekWeight;
         
         if (flee)
             steeringTarget += Flee(vehicle.target.position) * vehicle.fleeWeight;
@@ -285,7 +288,8 @@ public class SteeringBehavior
             steeringTarget += Follow(vehicle.leader.transform, vehicle.followOffset);
         
         if (pursuit)
-            steeringTarget += Pursuit(vehicle.pursuer) * vehicle.pursuitWeight;
+            if (vehicle.pursuer != null)
+                steeringTarget += Pursuit(vehicle.pursuer) * vehicle.pursuitWeight;
         
         if (evade)
             steeringTarget += Evade(vehicle.evadeTransform) * vehicle.evadeWeight;

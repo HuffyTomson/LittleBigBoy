@@ -51,6 +51,14 @@ public class CuboidManager : SingletonBehaviour<CuboidManager>
         }
     }
 
+    public void PullFish(Vector3 _to, float _force)
+    {
+        foreach (Cuboid c in cubeoidList)
+        {
+            c.vehicle.Pull(_to, _force);
+        }
+    }
+
     public void FeedFish(Vector3 _position)
     {
         GameObject obj = GameObject.Instantiate(foodPrefab);
@@ -83,7 +91,10 @@ public class CuboidManager : SingletonBehaviour<CuboidManager>
     {
         foreach(Cuboid c in cubeoidList)
         {
-            c.vehicle.target = foodList[0].transform;
+            if (foodList.Count > 0)
+                c.vehicle.target = foodList[0].transform;
+            else
+                c.vehicle.target = null;
         }
     }
 }

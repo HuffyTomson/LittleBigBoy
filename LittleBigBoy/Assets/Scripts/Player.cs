@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
         FOOD,
     }
 
-    Tools selectedTool;
+    Tools selectedTool = Tools.FOOD;
 
 	void Update ()
     {
@@ -25,8 +25,7 @@ public class Player : MonoBehaviour
             selectedTool = Tools.HAND;
         if (Input.GetKeyDown("2"))
             selectedTool = Tools.FOOD;
-
-
+        
         if (Input.GetMouseButtonDown(0))
         {
             mouseDown = true;
@@ -52,10 +51,10 @@ public class Player : MonoBehaviour
                             CuboidManager.Instance.KickFish(hit.point, 15.0f);
                             break;
                         case Tools.FOOD:
+                            CuboidManager.Instance.PullFish(hit.point, 2.5f);
                             CuboidManager.Instance.FeedFish(hit.point);
                             break;
                     }
-                    CuboidManager.Instance.KickFish(hit.point, 15.0f);
                 }
             }
         }

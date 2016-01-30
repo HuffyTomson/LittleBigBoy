@@ -118,5 +118,12 @@ public class Vehicle
 
         rig.AddForce(dir * dis * _force); 
     }
-      
+
+    public void Pull(Vector3 _to, float _force)
+    {
+        Vector3 dir = _to - position;
+        float dis = Mathf.Clamp(20 - Vector3.Distance(_to, position), 0, 20);
+
+        rig.AddForce(dir * dis * _force);
+    }
 }

@@ -17,6 +17,9 @@ public class CuboidWander : State<Cuboid>
         t.transform.position = new Vector3(Random.Range(-5.0f, 5.0f), 0, Random.Range(-5.0f, 5.0f));
         owner.vehicle.target = t.transform;
 
+        //owner.vehicle.steeringBehavior.seek = true;
+        //owner.vehicle.seekWeight = 0.25f;
+
         owner.vehicle.steeringBehavior.arrive = true;
         owner.vehicle.arriveWeight = 0.25f;
 
