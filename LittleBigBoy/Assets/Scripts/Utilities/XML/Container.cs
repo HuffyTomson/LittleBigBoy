@@ -64,7 +64,7 @@ namespace Huffy.Utilities
             s += DebugString();
 
             s += "\n////////////////////////////////////////////////////////////////////////////////\n";
-            UIDebug.Log(s);
+            Debug.Log(s);
         }
     }
 }
