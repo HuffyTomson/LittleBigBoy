@@ -31,7 +31,7 @@ public class CuboidManager : SingletonBehaviour<CuboidManager>
 
     public List<Cuboid> cubeoidList = new List<Cuboid>();
 
-    void Awake()
+    void Start()
     {
         List<FishData> fishList = XMLManager.Instance.GetFish();
         foreach (FishData f in fishList)
@@ -80,7 +80,7 @@ public class CuboidManager : SingletonBehaviour<CuboidManager>
 
     IEnumerator FoodLifeTime(GameObject _food)
     {
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(6.0f);
 
         foodList.Remove(_food);
         Destroy(_food);
