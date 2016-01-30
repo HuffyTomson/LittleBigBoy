@@ -6,7 +6,9 @@ public class GameManager : SingletonBehaviour<GameManager>
 {
     public int id = 0;
     private StateMachine<GameManager> sm;
-    
+
+    public Transform hand;
+
     IEnumerator Start ()
     {
         DontDestroy();

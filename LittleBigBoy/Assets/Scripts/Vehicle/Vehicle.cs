@@ -18,9 +18,14 @@ public class Vehicle
     [HideInInspector]
     public  Transform target;
     [HideInInspector]
+    public Transform pursuer; 
+    [HideInInspector]
+    public Transform evadeTransform;
+    [HideInInspector]
     public Vector3 steeringTarget;
     [HideInInspector]
     // holds vehicels near this one
+    // temp get from cumoid manager
     public List<GameObject> neighbors;
     // holds a target other than the player that leads the vehical 
     public GameObject leader;
@@ -104,5 +109,13 @@ public class Vehicle
         
         Obj.transform.rotation = Quaternion.Lerp(Obj.transform.rotation, Quaternion.LookRotation(rig.velocity), Time.deltaTime * turnRate);
      }
+
+    void Kick(Vector3 _from, float _force)
+    {
+        Vector3 dir = _from - position;
+        float force = Vector3.Distance(_from, position) + _force;
+
+        rig.AddForce(dir * force); 
+    }
       
 }

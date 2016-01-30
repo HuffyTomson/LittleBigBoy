@@ -14,7 +14,7 @@ public class CuboidWander : State<Cuboid>
         owner.vehicle.maxSpeed = 10;
 
         GameObject t = new GameObject();
-        t.transform.position = new Vector3(5, 5, 5);
+        t.transform.position = new Vector3(Random.Range(-5.0f, 5.0f), 0, Random.Range(-5.0f, 5.0f));
         owner.vehicle.target = t.transform;
 
         owner.vehicle.steeringBehavior.arrive = true;
@@ -22,6 +22,10 @@ public class CuboidWander : State<Cuboid>
 
         owner.vehicle.steeringBehavior.wander = true;
         owner.vehicle.wanderWeight = 1f;
+
+        owner.vehicle.evadeTransform = GameManager.Instance.hand;
+        owner.vehicle.steeringBehavior.evade = true;
+        owner.vehicle.evadeWeight = 1;
     }
 
     public override void Exit()

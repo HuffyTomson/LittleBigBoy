@@ -8,15 +8,15 @@ public class Cuboid : MonoBehaviour
     private StateMachine<Cuboid> sm;
     public Vehicle vehicle;
     
-    void OnEnable()
-    {
-        CuboidManager.AddToList(this);
-    }
-
-    void OnDisable()
-    {
-        CuboidManager.RemoveFromList(this);
-    }
+    //void OnEnable()
+    //{
+    //    CuboidManager.AddToList(this);
+    //}
+    //
+    //void OnDisable()
+    //{
+    //    CuboidManager.RemoveFromList(this);
+    //}
 
     void Awake ()
     {

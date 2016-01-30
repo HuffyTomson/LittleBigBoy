@@ -284,10 +284,10 @@ public class SteeringBehavior
             steeringTarget += Follow(vehicle.leader.transform, vehicle.followOffset);
         
         if (pursuit)
-            steeringTarget += Pursuit(vehicle.target) * vehicle.pursuitWeight;
+            steeringTarget += Pursuit(vehicle.pursuer) * vehicle.pursuitWeight;
         
         if (evade)
-            steeringTarget += Evade(vehicle.target) * vehicle.evadeWeight;
+            steeringTarget += Evade(vehicle.evadeTransform) * vehicle.evadeWeight;
         
         if (wander)
             steeringTarget += Wander() * vehicle.wanderWeight;

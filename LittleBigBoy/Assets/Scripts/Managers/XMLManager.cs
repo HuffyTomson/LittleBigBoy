@@ -92,6 +92,11 @@ public class XMLManager : SingletonBehaviour<XMLManager>
 
     public List<FishData> GetFish()
     {
+        if(fish.Count == 0)
+        {
+            Load();
+        }
+
         return fish;
     }
 
