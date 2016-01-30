@@ -18,6 +18,13 @@ public class XMLManager : SingletonBehaviour<XMLManager>
     void Start ()
     {
         Load();
+        // update fish value
+        foreach(FishData f in fish)
+        {
+            f.value *= UnityEngine.Random.Range(0.99f, 1.02f);
+            f.value += timeElapsed * UnityEngine.Random.Range(0.9f, 1.15f);
+        }
+        Save();
         Debug.Log(Application.persistentDataPath + "Save.txt");
         DontDestroy();
     }
@@ -44,8 +51,12 @@ public class XMLManager : SingletonBehaviour<XMLManager>
                                             int.Parse(dateArray[4]), // mm
                                             int.Parse(dateArray[5]));// ss
 
-                timeElapsed = (float)lastDateTime.Subtract(DateTime.Now).TotalMinutes;
+                timeElapsed = (float)DateTime.Now.Subtract(lastDateTime).TotalHours;
 
+                Debug.Log(lastDateTime);
+                Debug.Log(DateTime.Now);
+                Debug.Log("timeElapsed: " + timeElapsed);
+                
                 for (int i = 1; i < lines.Length; i++)
                 {
                     string[] line = lines[i].Split(',');
