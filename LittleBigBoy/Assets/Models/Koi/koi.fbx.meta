@@ -49,6 +49,16 @@ ModelImporter:
     100082: upper_tail3
     100084: upper_tail4
     100086: upper_tail5
+    100088: l_brow
+    100090: l_front_fin1
+    100092: l_front_fin2
+    100094: l_front_fin3
+    100096: l_front_fin4
+    100098: r_brow
+    100100: r_front_fin1
+    100102: r_front_fin2
+    100104: r_front_fin3
+    100106: r_front_fin4
     400000: body
     400002: group2
     400004: head
@@ -93,13 +103,31 @@ ModelImporter:
     400082: upper_tail3
     400084: upper_tail4
     400086: upper_tail5
+    400088: l_brow
+    400090: l_front_fin1
+    400092: l_front_fin2
+    400094: l_front_fin3
+    400096: l_front_fin4
+    400098: r_brow
+    400100: r_front_fin1
+    400102: r_front_fin2
+    400104: r_front_fin3
+    400106: r_front_fin4
     2300000: l_eye
     2300002: r_eye
+    2300004: body
+    2300006: l_brow
+    2300008: r_brow
     3300000: l_eye
     3300002: r_eye
+    3300004: body
+    3300006: l_brow
+    3300008: r_brow
     4300000: r_eye
     4300002: body
     4300004: l_eye
+    4300006: l_brow
+    4300008: r_brow
     7400000: Take 001
     9500000: //RootNode
     13700000: body
@@ -149,91 +177,55 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: group2
-        weight: 1
-      - path: group2/body
-        weight: 1
-      - path: group2/l_eye
-        weight: 1
-      - path: group2/r_eye
+      - path: body
         weight: 1
       - path: head
         weight: 1
-      - path: head/lower_lip
+      - path: head/spine1
         weight: 1
-      - path: head/root
+      - path: head/spine1/l_front_fin1
         weight: 1
-      - path: head/root/l_fin1
+      - path: head/spine1/l_front_fin1/l_front_fin2
         weight: 1
-      - path: head/root/l_fin1/l_fin2
+      - path: head/spine1/l_front_fin1/l_front_fin2/l_front_fin3
         weight: 1
-      - path: head/root/l_fin1/l_fin2/l_fin3
+      - path: head/spine1/l_front_fin1/l_front_fin2/l_front_fin3/l_front_fin4
         weight: 1
-      - path: head/root/l_fin1/l_fin2/l_fin3/l_fin4
+      - path: head/spine1/r_front_fin1
         weight: 1
-      - path: head/root/l_fin1/l_fin2/l_fin3/l_fin4/l_fin5
+      - path: head/spine1/r_front_fin1/r_front_fin2
         weight: 1
-      - path: head/root/r_fin1
+      - path: head/spine1/r_front_fin1/r_front_fin2/r_front_fin3
         weight: 1
-      - path: head/root/r_fin1/r_fin2
+      - path: head/spine1/r_front_fin1/r_front_fin2/r_front_fin3/r_front_fin4
         weight: 1
-      - path: head/root/r_fin1/r_fin2/r_fin3
+      - path: head/spine1/spine2
         weight: 1
-      - path: head/root/r_fin1/r_fin2/r_fin3/r_fin4
+      - path: head/spine1/spine2/l_back_fin1
         weight: 1
-      - path: head/root/r_fin1/r_fin2/r_fin3/r_fin4/r_fin5
+      - path: head/spine1/spine2/l_back_fin1/l_back_fin2
         weight: 1
-      - path: head/root/spine1
+      - path: head/spine1/spine2/l_back_fin1/l_back_fin2/l_back_fin3
         weight: 1
-      - path: head/root/spine1/spine2
+      - path: head/spine1/spine2/l_back_fin1/l_back_fin2/l_back_fin3/l_back_fin4
         weight: 1
-      - path: head/root/spine1/spine2/l_back_fin1
+      - path: head/spine1/spine2/r_back_fin1
         weight: 1
-      - path: head/root/spine1/spine2/l_back_fin1/l_back_fin2
+      - path: head/spine1/spine2/r_back_fin1/r_back_fin2
         weight: 1
-      - path: head/root/spine1/spine2/l_back_fin1/l_back_fin2/l_back_fin3
+      - path: head/spine1/spine2/r_back_fin1/r_back_fin2/r_back_fin3
         weight: 1
-      - path: head/root/spine1/spine2/l_back_fin1/l_back_fin2/l_back_fin3/l_back_fin4
+      - path: head/spine1/spine2/r_back_fin1/r_back_fin2/r_back_fin3/r_back_fin4
         weight: 1
-      - path: head/root/spine1/spine2/l_back_fin1/l_back_fin2/l_back_fin3/l_back_fin4/l_back_fin5q
+      - path: head/spine1/spine2/spine3
         weight: 1
-      - path: head/root/spine1/spine2/r_back_fin1
+      - path: head/spine1/spine2/spine3/spine4
         weight: 1
-      - path: head/root/spine1/spine2/r_back_fin1/r_back_fin2
+      - path: head/spine1/spine2/spine3/spine4/spine5
         weight: 1
-      - path: head/root/spine1/spine2/r_back_fin1/r_back_fin2/r_back_fin3
+      - path: l_brow
         weight: 1
-      - path: head/root/spine1/spine2/r_back_fin1/r_back_fin2/r_back_fin3/r_back_fin4
-        weight: 1
-      - path: head/root/spine1/spine2/r_back_fin1/r_back_fin2/r_back_fin3/r_back_fin4/r_back_fin5q
-        weight: 1
-      - path: head/root/spine1/spine2/spine3
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/lower_tail1
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/lower_tail1/lower_tail2
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/lower_tail1/lower_tail2/lower_tail3
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/lower_tail1/lower_tail2/lower_tail3/lower_tail4
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1/upper_tail2
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1/upper_tail2/upper_tail3
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1/upper_tail2/upper_tail3/upper_tail4
-        weight: 1
-      - path: head/root/spine1/spine2/spine3/spine4/spine5/tail1/upper_tail1/upper_tail2/upper_tail3/upper_tail4/upper_tail5
-        weight: 1
-      - path: head/upper_lip
+      - path: r_brow
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
