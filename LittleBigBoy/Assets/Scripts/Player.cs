@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
 public class Player : MonoBehaviour
 {
+    public GameObject handPrefab;
     public Transform parrent;
     Vector3 downPosition;
 
@@ -17,7 +20,7 @@ public class Player : MonoBehaviour
         FOOD,
     }
 
-    Tools selectedTool = Tools.FOOD;
+    Tools selectedTool = Tools.HAND;
 
 	void Update ()
     {
@@ -48,6 +51,8 @@ public class Player : MonoBehaviour
                     switch(selectedTool)
                     {
                         case Tools.HAND:
+                            GameObject obj = Instantiate(handPrefab);
+                            obj.transform.position = hit.point;
                             CuboidManager.Instance.KickFish(hit.point, 15.0f);
                             break;
                         case Tools.FOOD:

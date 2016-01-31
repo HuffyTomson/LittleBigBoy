@@ -67,6 +67,13 @@ public class XMLManager : SingletonBehaviour<XMLManager>
                 }
             }
         }
+        else
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                fish.Add(new FishData(i.ToString(),(float)i * 0.1f));
+            }
+        }
     }
 
     public void Save()
@@ -96,10 +103,10 @@ public class XMLManager : SingletonBehaviour<XMLManager>
 
     public List<FishData> GetFish()
     {
-        //if(fish.Count == 0)
-        //{
-        //    Load();
-        //}
+        if(fish.Count == 0)
+        {
+            Load();
+        }
 
         return fish;
     }
