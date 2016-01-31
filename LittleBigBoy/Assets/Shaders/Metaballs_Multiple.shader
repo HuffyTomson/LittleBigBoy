@@ -51,6 +51,8 @@ SubShader {
 		half4 texcol= tex2D (_MainTex, i.uv); 
 		half4 finalColor= texcol;	
 
+		//int r = texcol.r / 100
+
 		finalColor = half4(texcol.r / _Red, texcol.g / _Green, texcol.b / _Blue, texcol.a);
 		finalColor = floor(finalColor / _Value1)*_Value2;
 
