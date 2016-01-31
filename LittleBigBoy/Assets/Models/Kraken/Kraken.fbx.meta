@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 042729b5c0aa9914baf3ab3b7d30aba8
-timeCreated: 1454208505
+timeCreated: 1454271861
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -11,68 +11,139 @@ ModelImporter:
     100006: GroundPiece3
     100008: GroundPiece4
     100010: GroundPiece5
-    100012: //RootNode
-    100014: Kraken_grp
-    100016: kraken_head
-    100018: tentacle1
-    100020: tentacle2
-    100022: tentacle3
-    100024: tentacle4
-    100026: tentacle5
-    100028: tentacle6
-    100030: Tentacle_grp
+    100012: joint1
+    100014: joint10
+    100016: joint11
+    100018: joint17
+    100020: joint2
+    100022: joint23
+    100024: joint29
+    100026: joint3
+    100028: joint30
+    100030: joint31
+    100032: joint32
+    100034: joint33
+    100036: joint5
+    100038: joint6
+    100040: joint6 1
+    100042: joint6 2
+    100044: joint6 3
+    100046: joint6 4
+    100048: joint6 5
+    100050: joint7
+    100052: joint7 1
+    100054: joint7 2
+    100056: joint7 3
+    100058: joint7 4
+    100060: joint7 5
+    100062: joint8
+    100064: joint8 1
+    100066: joint8 2
+    100068: joint8 3
+    100070: joint8 4
+    100072: joint8 5
+    100074: joint9
+    100076: joint9 1
+    100078: joint9 2
+    100080: joint9 3
+    100082: joint9 4
+    100084: joint9 5
+    100086: //RootNode
+    100088: Kraken_grp
+    100090: kraken_grp
+    100092: kraken_head
+    100094: tentacle1
+    100096: tentacle2
+    100098: tentacle3
+    100100: tentacle4
+    100102: tentacle5
+    100104: tentacle6
+    100106: Tentacle_grp
     400000: GroundCrack_grp
     400002: GroundPiece1
     400004: GroundPiece2
     400006: GroundPiece3
     400008: GroundPiece4
     400010: GroundPiece5
-    400012: //RootNode
-    400014: Kraken_grp
-    400016: kraken_head
-    400018: tentacle1
-    400020: tentacle2
-    400022: tentacle3
-    400024: tentacle4
-    400026: tentacle5
-    400028: tentacle6
-    400030: Tentacle_grp
+    400012: joint1
+    400014: joint10
+    400016: joint11
+    400018: joint17
+    400020: joint2
+    400022: joint23
+    400024: joint29
+    400026: joint3
+    400028: joint30
+    400030: joint31
+    400032: joint32
+    400034: joint33
+    400036: joint5
+    400038: joint6
+    400040: joint6 1
+    400042: joint6 2
+    400044: joint6 3
+    400046: joint6 4
+    400048: joint6 5
+    400050: joint7
+    400052: joint7 1
+    400054: joint7 2
+    400056: joint7 3
+    400058: joint7 4
+    400060: joint7 5
+    400062: joint8
+    400064: joint8 1
+    400066: joint8 2
+    400068: joint8 3
+    400070: joint8 4
+    400072: joint8 5
+    400074: joint9
+    400076: joint9 1
+    400078: joint9 2
+    400080: joint9 3
+    400082: joint9 4
+    400084: joint9 5
+    400086: //RootNode
+    400088: Kraken_grp
+    400090: kraken_grp
+    400092: kraken_head
+    400094: tentacle1
+    400096: tentacle2
+    400098: tentacle3
+    400100: tentacle4
+    400102: tentacle5
+    400104: tentacle6
+    400106: Tentacle_grp
     2300000: GroundPiece1
     2300002: GroundPiece2
     2300004: GroundPiece3
     2300006: GroundPiece4
     2300008: GroundPiece5
-    2300010: kraken_head
-    2300012: tentacle1
-    2300014: tentacle2
-    2300016: tentacle3
-    2300018: tentacle4
-    2300020: tentacle5
-    2300022: tentacle6
     3300000: GroundPiece1
     3300002: GroundPiece2
     3300004: GroundPiece3
     3300006: GroundPiece4
     3300008: GroundPiece5
-    3300010: kraken_head
-    3300012: tentacle1
-    3300014: tentacle2
-    3300016: tentacle3
-    3300018: tentacle4
-    3300020: tentacle5
-    3300022: tentacle6
     4300000: GroundPiece4
     4300002: GroundPiece1
     4300004: GroundPiece2
     4300006: GroundPiece3
     4300008: GroundPiece5
-    4300010: tentacle6
-    4300012: tentacle5
-    4300014: tentacle4
-    4300016: tentacle3
-    4300018: tentacle2
-    4300020: tentacle1
+    4300010: tentacle1
+    4300012: tentacle2
+    4300014: tentacle3
+    4300016: tentacle4
+    4300018: tentacle5
+    4300020: tentacle6
     4300022: kraken_head
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: kraken_head
+    13700002: tentacle1
+    13700004: tentacle2
+    13700006: tentacle3
+    13700008: tentacle4
+    13700010: tentacle5
+    13700012: tentacle6
   materials:
     importMaterials: 1
     materialName: 0
@@ -131,7 +202,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
