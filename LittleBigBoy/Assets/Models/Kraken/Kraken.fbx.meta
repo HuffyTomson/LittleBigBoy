@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 042729b5c0aa9914baf3ab3b7d30aba8
+timeCreated: 1454208505
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: GroundCrack_grp
+    100002: GroundPiece1
+    100004: GroundPiece2
+    100006: GroundPiece3
+    100008: GroundPiece4
+    100010: GroundPiece5
+    100012: //RootNode
+    100014: Kraken_grp
+    100016: kraken_head
+    100018: tentacle1
+    100020: tentacle2
+    100022: tentacle3
+    100024: tentacle4
+    100026: tentacle5
+    100028: tentacle6
+    100030: Tentacle_grp
+    400000: GroundCrack_grp
+    400002: GroundPiece1
+    400004: GroundPiece2
+    400006: GroundPiece3
+    400008: GroundPiece4
+    400010: GroundPiece5
+    400012: //RootNode
+    400014: Kraken_grp
+    400016: kraken_head
+    400018: tentacle1
+    400020: tentacle2
+    400022: tentacle3
+    400024: tentacle4
+    400026: tentacle5
+    400028: tentacle6
+    400030: Tentacle_grp
+    2300000: GroundPiece1
+    2300002: GroundPiece2
+    2300004: GroundPiece3
+    2300006: GroundPiece4
+    2300008: GroundPiece5
+    2300010: kraken_head
+    2300012: tentacle1
+    2300014: tentacle2
+    2300016: tentacle3
+    2300018: tentacle4
+    2300020: tentacle5
+    2300022: tentacle6
+    3300000: GroundPiece1
+    3300002: GroundPiece2
+    3300004: GroundPiece3
+    3300006: GroundPiece4
+    3300008: GroundPiece5
+    3300010: kraken_head
+    3300012: tentacle1
+    3300014: tentacle2
+    3300016: tentacle3
+    3300018: tentacle4
+    3300020: tentacle5
+    3300022: tentacle6
+    4300000: GroundPiece4
+    4300002: GroundPiece1
+    4300004: GroundPiece2
+    4300006: GroundPiece3
+    4300008: GroundPiece5
+    4300010: tentacle6
+    4300012: tentacle5
+    4300014: tentacle4
+    4300016: tentacle3
+    4300018: tentacle2
+    4300020: tentacle1
+    4300022: kraken_head
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
