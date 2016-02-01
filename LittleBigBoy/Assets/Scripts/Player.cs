@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     Vector3 rotationDelta = Vector3.zero;
     public Vector3 rotationAmt = Vector3.zero;
 
-    enum Tools
+    public enum Tools
     {
         HAND,
         FOOD,
@@ -22,7 +22,12 @@ public class Player : MonoBehaviour
 
     Tools selectedTool = Tools.HAND;
 
-	void Update ()
+    public void SetTool(int _tool)
+    {
+        selectedTool = (Tools)_tool;
+    }
+    
+    void Update ()
     {
         if (Input.GetKeyDown("1"))
             selectedTool = Tools.HAND;
