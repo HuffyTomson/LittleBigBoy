@@ -19,14 +19,12 @@ public class XMLManager : SingletonBehaviour<XMLManager>
     void Awake ()
     {
         Load();
-        // update fish value
-        //foreach(FishData f in fish)
-        //{
-        //    f.value *= UnityEngine.Random.Range(0.99f, 1.02f);
-        //    f.value += timeElapsed * UnityEngine.Random.Range(0.9f, 1.15f);
-        //}
+        // TODO:
+        // update fish stats
+        // 
+        //
         Save();
-        Debug.Log(Application.persistentDataPath + "Save.txt");
+        Debug.Log(Application.persistentDataPath + "\\Save.txt");
         DontDestroy();
     }
 
@@ -34,9 +32,9 @@ public class XMLManager : SingletonBehaviour<XMLManager>
     {
         fish.Clear();
 
-        if (File.Exists(Application.persistentDataPath + "Save.txt"))
+        if (File.Exists(Application.persistentDataPath + "\\Save.txt"))
         {
-            string[] lines = File.ReadAllLines(Application.persistentDataPath + "Save.txt");
+            string[] lines = File.ReadAllLines(Application.persistentDataPath + "\\Save.txt");
             //foreach (string s in lines)
             //{
             //    Debug.Log(s);
@@ -44,26 +42,34 @@ public class XMLManager : SingletonBehaviour<XMLManager>
 
             if(lines.Length > 2)
             {
-                string[] dateArray = lines[0].Split(',');
+                string[] globalData = lines[0].Split('|');
+
+                // date //
+                string[] dateArray = globalData[0].Split(',');
                 lastDateTime = new DateTime(int.Parse(dateArray[0]), // yyyy
-                                            int.Parse(dateArray[1]), // mm
+                                            int.Parse(dateArray[1]), // MM
                                             int.Parse(dateArray[2]), // dd
-                                            int.Parse(dateArray[3]), // hh
-                                            int.Parse(dateArray[4]), // MM
+                                            int.Parse(dateArray[3]), // HH
+                                            int.Parse(dateArray[4]), // mm
                                             int.Parse(dateArray[5]));// ss
                 
-                timeElapsed = (float)DateTime.Now.Subtract(lastDateTime).TotalHours;
+                timeElapsed = (float)DateTime.Now.Subtract(lastDateTime).TotalMinutes;
                 worldProgress = float.Parse(lines[1]);
                 //worldProgress += timeElapsed;
 
-                Debug.Log(lastDateTime);
-                Debug.Log(DateTime.Now);
+                Debug.Log("Last Time: " + lastDateTime);
+                Debug.Log("Now: " + DateTime.Now);
                 Debug.Log("timeElapsed: " + timeElapsed);
-                
+
+                // next fish id
+                if (globalData.Length > 1)
+                {
+                    int nextID = int.Parse(globalData[1]);
+                }
+
                 for (int i = 2; i < lines.Length; i++)
                 {
-                    string[] line = lines[i].Split(',');
-                    fish.Add(new FishData(line[0], float.Parse(line[1])));
+                    fish.Add(new FishData(lines[i]));
                 }
             }
         }
@@ -71,7 +77,7 @@ public class XMLManager : SingletonBehaviour<XMLManager>
         {
             for (int i = 0; i < 50; i++)
             {
-                fish.Add(new FishData(i.ToString(),(float)i * 0.1f));
+                fish.Add(new FishData("Fish" + i.ToString(),0));
             }
         }
     }
@@ -79,20 +85,20 @@ public class XMLManager : SingletonBehaviour<XMLManager>
     public void Save()
     {
         List<string> lines = new List<string>();
-        lines.Add(DateTime.Now.ToString("yyyy,MM,dd,hh,mm,ss"));
+        lines.Add(DateTime.Now.ToString("yyyy,MM,dd,HH,mm,ss"));
         lines.Add(worldProgress.ToString());
         foreach(FishData f in fish)
         {
             lines.Add(f.name + "," + f.value.ToString());
         }
-        File.WriteAllLines(Application.persistentDataPath + "Save.txt", lines.ToArray());
+        File.WriteAllLines(Application.persistentDataPath + "\\Save.txt", lines.ToArray());
     }
 
     public void DeleteSave()
     {
-        if (File.Exists(Application.persistentDataPath + "Save.txt"))
+        if (File.Exists(Application.persistentDataPath + "\\Save.txt"))
         {
-            File.Delete(Application.persistentDataPath + "Save.txt");
+            File.Delete(Application.persistentDataPath + "\\Save.txt");
         }
     }
 

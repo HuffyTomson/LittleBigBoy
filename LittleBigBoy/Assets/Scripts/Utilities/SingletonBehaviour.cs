@@ -38,7 +38,7 @@ namespace Huffy.Utilities
         {
             if (this == Instance)
             {
-                MonoBehaviour.DontDestroyOnLoad(Instance.gameObject);
+                MonoBehaviour.DontDestroyOnLoad(Instance);
             }
             else
             {
